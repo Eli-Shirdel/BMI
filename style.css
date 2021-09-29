@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Vazir', cursive;
+    font-weight:normal;
+    color: #393E46;
+}
+/*------------ header and inputs ---------*/
+#header{
+    margin:20px ;
+    color: #393E46;
+}
+#holder{
+    width: 100%;
+    height: 120%;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputbox{
+    padding: 5px;
+    display: flex;
+    align-items: flex-end;
+}
+.input{
+    padding:3px;
+    margin-right: 5px;
+}
+input:focus{
+    border: 2px #F8B500 solid;
+    box-shadow: 1px 1px 3px 1px #F8B500;
+}
+label{
+    margin-left: 5px;
+}
+/*----- svg ----*/
+svg{
+    max-width: 350px;
+}
+/*----------- Bmi result buttton and warning span -----------*/
+#result{
+    background: none;
+    font-family: 'Vazir', Arial, sans-serif;
+    padding: 5px;
+    border: 1px #5C636E solid;
+    border-radius: 3px;
+}
+#result:hover{
+    box-shadow: 1px 1px 3px 1px gray;
+    background-color: #F8B500 ;
+    color: #F7F7F7;
+}
+#result:active{
+    box-shadow: 1px 1px 5px 1px #393E46;
+}
+#warning{
+    font-size: medium;
+    margin-top: 20px;
+    color: #F8B500;
+}
+/*----------------- notice user bmi -----------*/
+#endHolder{
+    direction: rtl;
+    text-align: center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+#explanation{
+    padding: 5px;
+}
+#advice{
+    padding: 5px;
+}
+/*--------- Dark end part ---------*/
+#endPart{
+    background-color: #161616e7;
+    color: #f7f7f7c0;
+    font-family:  cursive;
+    font-style: normal;
+    font-size: 15px;
+    padding: 10px;
+}
+/*----------------------------Media ----------------------*/
+@media screen and (max-width:500px){
+       body{
+           font-size: smaller;
+       }
+       .inputbox{
+           display: flex;
+           flex-direction: column-reverse;
+           align-items: center;
+           padding: 1px;
+       }
+       .lable{
+           padding: 10px;
+       }
+       #warning{
+           font-size: smaller
+       }
+       #header{
+        font-size: 20px;
+        }
+        #noticeBmi{
+            font-size: 15px;
+        }
+        #endHolder{
+            direction: rtl;
+            text-align: center;
+            width: 80%;
+            padding: 5px;
+        }
+        #explanation{
+            font-size: 10px;
+        }
+        #advice{
+            font-size: smaller;
+        }
+        #endPart{
+            font-size: 10px;
+            padding: 5px;
+            height: 25px;
+        }    }
+@media screen and (max-width:300px){
+    body{
+        font-size: x-small;
+    }
+    svg{
+        max-width: 200px;
+    }
+    #header{
+        font-size: 15px;
+    }
+    #result{
+        padding: 4px;
+        font-size: smaller;
+        border: 1px #5C636E solid;
+        border-radius: 2px;
+    }    
+    .input{
+        width: 100px;
+        font-size: smaller;
+    }}
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Vazir.eot');
+    src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'), 
+    url('fonts/Vazir.woff2') format('woff2'), 
+    url('fonts/Vazir.woff') format('woff'), 
+    url('fonts/Vazir.ttf') format('truetype');
+   }
