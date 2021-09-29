@@ -30,8 +30,7 @@ body{
     margin-right: 5px;
 }
 input:focus{
-    border: 2px #F8B500 solid;
-    box-shadow: 1px 1px 3px 1px #F8B500;
+    caret-color: #F8B500;
 }
 label{
     margin-left: 5px;
