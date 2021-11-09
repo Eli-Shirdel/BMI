@@ -1,13 +1,11 @@
-var $ = document;
+var $ = document
 var cm = $.getElementById("height");
 var kilog = $.getElementById("weight");
 var warning = $.getElementById("warning") 
-
 ////////////////////////////////
-
-var noticeBmi = $.getElementById("noticeBmi");
-var explanation = $.getElementById("explanation");
-var advice = $.getElementById("advice");
+var noticeBmi = $.getElementById("noticeBmi")
+var explanation = $.getElementById("explanation")
+var advice = $.getElementById("advice")
 
 
 function resultFunc(){
@@ -15,13 +13,12 @@ function resultFunc(){
     //---------- به دست آوردن حاصل بی ام آی
     var cmeter = parseInt(cm.value);
     var meter = cmeter/100;
-    var powmeter = Math.pow(meter,2);
-    var kg = parseInt(kilog.value) ;
+    var powmeter = Math.pow(meter,2)
+    var kg = parseInt(kilog.value) 
     var result = kg / powmeter;
-    result = result.toFixed(2);
+    result = result.toFixed(2)
 
     //-------------- نمایش حاصل  در سایت
-
     noticeBmi.innerHTML = "BMI" + " شما " + result + " است.";
 
     if(result<18.5){
@@ -58,10 +55,23 @@ function resultFunc(){
         explanation.innerHTML = "";
         advice.innerHTML = "";
     }
+    else if(cmeter>210){
+        warning.innerHTML = "قدت رو درست وارد کن! مگه زرافه ای؟!؟ "
+        noticeBmi.innerHTML = "";
+        explanation.innerHTML = "";
+        advice.innerHTML = "";
+    }
     else if(kg < 40 ){
         warning.innerHTML = "مطئنی وزنت رو درست وارد کردی؟!؟"
         noticeBmi.innerHTML = "";
         explanation.innerHTML = "";
         advice.innerHTML = "";
     }
+    else if(kg > 120 ){
+        warning.innerHTML = "وزنت رو درست وارد کردی؟ خرسی فیلی چیزی هستی؟!؟"
+        noticeBmi.innerHTML = "";
+        explanation.innerHTML = "";
+        advice.innerHTML = "";
+    }
+
 }
