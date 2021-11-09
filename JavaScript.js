@@ -50,14 +50,25 @@ function resultFunc(){
         noticeBmi.innerHTML = "";
     }
     if(cmeter<140){
-        warning.innerHTML = "مطمئنی قدت رو درست وارد کردی؟!؟"
+        warning.innerHTML = "قدت رو درست وارد کردی؟؟"
         noticeBmi.innerHTML = "";
         explanation.innerHTML = "";
         advice.innerHTML = "";
     }
-    
+    else if(cmeter>210){
+        warning.innerHTML = "قدت  رو درست وارد کردی؟؟"
+        noticeBmi.innerHTML = "";
+        explanation.innerHTML = "";
+        advice.innerHTML = "";
+    }
     else if(kg < 40 ){
-        warning.innerHTML = "مطئنی وزنت رو درست وارد کردی؟!؟"
+        warning.innerHTML = "وزنت رو درست وارد کردی؟؟"
+        noticeBmi.innerHTML = "";
+        explanation.innerHTML = "";
+        advice.innerHTML = "";
+    }
+    else if(kg > 120 ){
+        warning.innerHTML = "وزنت رو درست وارد کردی؟؟"
         noticeBmi.innerHTML = "";
         explanation.innerHTML = "";
         advice.innerHTML = "";
