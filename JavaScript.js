@@ -55,20 +55,9 @@ function resultFunc(){
         explanation.innerHTML = "";
         advice.innerHTML = "";
     }
-    else if(cmeter>210){
-        warning.innerHTML = "قدت رو درست وارد کن! مگه زرافه ای؟!؟ "
-        noticeBmi.innerHTML = "";
-        explanation.innerHTML = "";
-        advice.innerHTML = "";
-    }
+    
     else if(kg < 40 ){
         warning.innerHTML = "مطئنی وزنت رو درست وارد کردی؟!؟"
-        noticeBmi.innerHTML = "";
-        explanation.innerHTML = "";
-        advice.innerHTML = "";
-    }
-    else if(kg > 120 ){
-        warning.innerHTML = "وزنت رو درست وارد کردی؟ خرسی فیلی چیزی هستی؟!؟"
         noticeBmi.innerHTML = "";
         explanation.innerHTML = "";
         advice.innerHTML = "";
