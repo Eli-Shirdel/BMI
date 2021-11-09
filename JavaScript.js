@@ -64,3 +64,4 @@ function resultFunc(){
         explanation.innerHTML = "";
         advice.innerHTML = "";
     }
+}
