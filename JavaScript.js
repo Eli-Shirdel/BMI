@@ -2,7 +2,9 @@ var $ = document
 var cm = $.getElementById("height");
 var kilog = $.getElementById("weight");
 var warning = $.getElementById("warning") 
+
 ////////////////////////////////
+
 var noticeBmi = $.getElementById("noticeBmi")
 var explanation = $.getElementById("explanation")
 var advice = $.getElementById("advice")
